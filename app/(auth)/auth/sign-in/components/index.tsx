@@ -37,7 +37,7 @@ const SignIn = () => {
           </Button>
         </LinkContainer>
       </div>
-      <GoogleLogin
+      {/* <GoogleLogin
         onSuccess={async (res) => {
           const credential = res.credential;
 
@@ -65,7 +65,7 @@ const SignIn = () => {
         onError={() => {
           toast.error('ورود با گوگل شکست خورد');
         }}
-      />
+      /> */}
       {/* <LinkContainer
         href={'/auth/forgot-password'}
         className="text-sm text-center text-blue-600 hover:text-primary"
