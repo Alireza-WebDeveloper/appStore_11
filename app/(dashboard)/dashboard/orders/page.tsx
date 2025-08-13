@@ -7,6 +7,7 @@ import OrderHeader from './order-header';
 import ShippingAddress from './shipping-address';
 import OrderItem from './order-item';
 import OrderSummary from './order-summary';
+import UserContactTitle from '@/app/lib/design/common/user-contact-title';
 
 export default function OrdersUserFriendly() {
   const { data: userOrder } = useFetchOrder();
@@ -33,9 +34,7 @@ export default function OrdersUserFriendly() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-8 rtl font-sans">
-      <h1 className="text-4xl font-extrabold mb-8 border-b border-gray-300 pb-4">
-        سفارش‌های من
-      </h1>
+      <UserContactTitle title="سفارش های من" />
 
       {userOrder.data.map((order: any) => (
         <div
