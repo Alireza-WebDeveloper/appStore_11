@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import { useFetchOrder } from '@/app/lib/hooks/order';
-import OrderHeader from './order-header';
-import ShippingAddress from './shipping-address';
 import OrderItem from './order-item';
+import ShippingAddress from './shipping-address';
 import OrderSummary from './order-summary';
+import OrderHeader from './order-header';
 
 export default function OrdersUserFriendly() {
   const { data: userOrder } = useFetchOrder();
