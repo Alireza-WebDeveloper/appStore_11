@@ -4,17 +4,15 @@ import { ShoppingCartFullIcon } from '@/app/lib/design/common/icons';
 import ImgContainer from '@/app/lib/design/common/img-container';
 import StarRating from '@/app/lib/design/common/star-rating';
 import Text from '@/app/lib/design/common/text';
-import { useGetProductById } from '@/app/lib/hooks/product';
+import { useGetProductById, useGetProducts } from '@/app/lib/hooks/product';
 import { calculateDiscountedPrice } from '@/app/lib/utils/calculate-discount-price';
 import { formatToIranianCurrency } from '@/app/lib/utils/curreny';
 import { Button } from '@nextui-org/react';
 
 const ProductCard = () => {
-  const { data: getProduct } = useGetProductById({
-    id: '67567c704ef7005ef2656b15',
-  });
+  const { data: getProducts } = useGetProducts({ page: 1, limit: 1 });
 
-  const product = getProduct?.data.product;
+  const product = getProducts?.data.products[0];
 
   if (!product) return null;
 
