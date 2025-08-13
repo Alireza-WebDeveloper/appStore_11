@@ -66,12 +66,12 @@ const SignIn = () => {
           toast.error('ورود با گوگل شکست خورد');
         }}
       /> */}
-      {/* <LinkContainer
+      <LinkContainer
         href={'/auth/forgot-password'}
         className="text-sm text-center text-blue-600 hover:text-primary"
       >
         رمز عبور خود را فراموش کرده‌اید؟
-      </LinkContainer> */}
+      </LinkContainer>
 
       <SignUpPrompt />
     </div>
