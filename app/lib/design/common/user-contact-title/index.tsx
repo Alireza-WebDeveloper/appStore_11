@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 type UserContactTitleProps = {
   className?: string;
-  icon?: React.ElementType;
+  icon?: any;
   title: string;
 };
 
