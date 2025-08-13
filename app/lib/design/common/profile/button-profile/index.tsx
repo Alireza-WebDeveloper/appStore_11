@@ -24,7 +24,7 @@ const ButtonProfile: React.FC<Props> = ({ profile }) => {
             <span>
               {profile.firstName} {profile.lastName}
             </span>
-            <span>کاربر</span>
+            <span>{profile.role}</span>
           </div>
         }
         title="پروفایل"

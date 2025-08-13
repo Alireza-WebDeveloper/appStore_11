@@ -1,6 +1,6 @@
 import { ProductState } from '../product/index.types';
 
-export interface OrderItem {
+export interface OrderItemType {
   productId: ProductState;
   quantity: number;
   price: number;
@@ -14,7 +14,7 @@ export interface GetResponseOrderDataType {
   data: {
     _id: string;
     userId: string;
-    items: OrderItem[];
+    items: OrderItemType[];
     totalPrice: number;
     status:
       | 'پردازش شده'

@@ -1,13 +1,6 @@
 // !! State
 
 export interface UserState {
-  address: {
-    street: string;
-    city: string;
-    postalCode: string;
-    country: string;
-    fullAddress: string;
-  };
   _id: string;
   firstName: string;
   lastName: string;
@@ -15,6 +8,14 @@ export interface UserState {
   phoneNumber: string;
   createdAt: string;
   updatedAt: string;
+  role: string;
+  address: {
+    street: string;
+    city: string;
+    postalCode: string;
+    country: string;
+    fullAddress: string;
+  };
 }
 
 // !! Response
