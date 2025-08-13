@@ -60,8 +60,8 @@ const sidebarSections = [
         icon: <PasswordIcon width={18} height={18} color="white" />,
       },
       {
-        label: 'تغییر ایمیل',
-        href: '/dashboard/profile/change-email',
+        label: 'اطلاعات تماس',
+        href: '/dashboard/profile/contact-info',
         icon: <EmailIcon width={18} height={18} color="white" />,
       },
     ],
