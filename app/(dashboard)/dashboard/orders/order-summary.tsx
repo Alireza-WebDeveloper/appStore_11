@@ -1,11 +1,12 @@
 // components/orders/OrderSummary.tsx
+import { OrderItemType } from '@/app/lib/hooks/order/index.types';
 import React from 'react';
 
 export default function OrderSummary({
   items,
   totalPrice,
 }: {
-  items: any[];
+  items: OrderItemType[];
   totalPrice: number;
 }) {
   const totalProductsPrice = items.reduce((acc, i) => {

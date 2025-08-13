@@ -1,13 +1,14 @@
 // components/orders/OrderItem.tsx
 import React from 'react';
 import ImgContainer from '@/app/lib/design/common/img-container';
+import { OrderItemType } from '@/app/lib/hooks/order/index.types';
 
 export default function OrderItem({
   item,
   isExpanded,
   toggle,
 }: {
-  item: any;
+  item: OrderItemType;
   isExpanded: boolean;
   toggle: () => void;
 }) {
